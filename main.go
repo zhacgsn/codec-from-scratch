@@ -33,7 +33,7 @@ func main() {
 	frames := make([][]byte, 0)
 
 	for {
-		// Read raw video frames from stdin. In rgb24 format, each pixel (r, g, b) is one byte
+		// Read raw video frames from stdin. In rgb24 format, each pixel (r, g, b) is three byte
 		// so the total size of the frame is width * height * 3.
 
 		frame := make([]byte, width*height*3)
